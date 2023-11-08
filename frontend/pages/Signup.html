@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signup.css" />
+  </head>
+  <body>
+    <div class="main">
+     
+      <section class="wrapper">
+        <div class="img">
+          <img src="../images/login.jpeg" width="100%"  alt="">
+        </div>
+        <div class="form signup">
+          <header>Signup</header>
+          <form id="signup-form" >
+            <input type="text" placeholder="Full name" id="FullName" />
+            <input type="email" placeholder="Email address" id="Email"/>
+            <input type="password" placeholder="Password" id="Password"/>
+            <input type="password" placeholder="Confirm" id="Confirm-password" />
+            <input type="submit" value="Signup" />
+          </form>
+          <p>
+            Already have an account?
+            <span><a href="login.html">Login Here</a></span>
+          </p>
+        </div>
+       
+  
+        <!-- <div class="form login">
+          <header>Login</header>
+          <form id="login-form">
+            <input type="text" placeholder="Email address" id="Email" />
+            <input type="password" placeholder="Password"  id="Confirm-password" />
+            <a href="#">Forgot password?</a>
+            <input type="submit" value="Login" />
+          </form>
+        </div> -->
+  
+        <!-- <script>
+          const wrapper = document.querySelector(".wrapper"),
+            signupHeader = document.querySelector(".signup header"),
+            loginHeader = document.querySelector(".login header");
+  
+          loginHeader.addEventListener("click", () => {
+            wrapper.classList.add("active");
+          });
+          signupHeader.addEventListener("click", () => {
+            wrapper.classList.remove("active");
+          });
+        </script> -->
+      </section>
+  
+    </div>
+
+    <script src="../dist/signup.js"></script>
+  </body>
+</html>
