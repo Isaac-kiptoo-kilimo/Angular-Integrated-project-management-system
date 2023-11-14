@@ -1,9 +1,9 @@
-POST http://localhost:5200/users/register
+POST http://localhost:5200/users/
 Content-Type: application/json
 
 {
-    "fullName": "Isaac Kilimo",
-    "email": "isaackilimok2@gmail.com",
+    "fullName": "Meshack Kiplimo",
+    "email": "meshack2@gmail.com",
     "password": "12345678"
 }
 
@@ -13,23 +13,24 @@ POST http://localhost:5200/users/login
 Content-Type: application/json
 
 {
-   "email": "isaackilimok2@gmail.com",
+   "email": "meshack2@gmail.com",
    "password": "12345678" 
 }
 
 ### fetching users
 GET http://localhost:5200/users/
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYTE4NjJiOTgtZGFlYi00NGMxLWI2NDUtYzA1NDkyZDVmODcxIiwiZnVsbE5hbWUiOiJJc2FhYyBLaWxpbW8iLCJlbWFpbCI6ImlzYWFja2lsaW1vazJAZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMDUkajMwQ3psQVhCeFl2OFZicG9KNm1tZWJuNkIuRkg5R3FMUDJOemhrei9DMGdhMEM1cjJuRWUiLCJyb2xlIjoidXNlciIsIndlbGNvbWVkIjpmYWxzZSwiaXNBc3NpZ25lZCI6MCwiaWF0IjoxNjk5MjczNDg5LCJleHAiOjE2OTk0NDYyODl9.Y2PsLblEGyvOcApAEo5HkH1xhPryxwvoY1KyeC6Zkx4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYzgyMmQ4M2MtMDE5YS00YzkwLTkwNDAtODM3NmIwYTQzY2YzIiwiZnVsbE5hbWUiOiJNZXNoYWNrIEtpcGxpbW8iLCJlbWFpbCI6Im1lc2hhY2syQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDA1JDM1eXpVdDczZDdidGhKQWRXeUtEOE95NnN5TkRuNVFNM3guc0kxcEtFN3ZhRDR0bXpKYVhpIiwicm9sZSI6InVzZXIiLCJpc0Fzc2lnbmVkIjowLCJpYXQiOjE2OTk2MjAxMDMsImV4cCI6MTY5OTc5MjkwM30.qczLgRkY2g22Bemk9ui5YdNlk0907au_GYbQCF2uPvo
 
 
 ### fetching user
-# GET http://localhost:5000/users/6a467541-1c49-41a8-bb53-24c33fb62389/
+GET http://localhost:5200/users/single/187fb1ce-7cee-4911-ba42-31e0ff7ddde2/
+token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYzgyMmQ4M2MtMDE5YS00YzkwLTkwNDAtODM3NmIwYTQzY2YzIiwiZnVsbE5hbWUiOiJNZXNoYWNrIEtpcGxpbW8iLCJlbWFpbCI6Im1lc2hhY2syQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDA1JDM1eXpVdDczZDdidGhKQWRXeUtEOE95NnN5TkRuNVFNM3guc0kxcEtFN3ZhRDR0bXpKYVhpIiwicm9sZSI6InVzZXIiLCJpc0Fzc2lnbmVkIjowLCJpYXQiOjE2OTk2MjAxMDMsImV4cCI6MTY5OTc5MjkwM30.qczLgRkY2g22Bemk9ui5YdNlk0907au_GYbQCF2uPvo
 
 
 
 ### checking user details
 GET http://localhost:5200/users/checkUserDetails
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZmQxNzFjMzEtODRlOC00NjM4LTkwOGYtODVlNWJkNmZmYzhiIiwiZnVsbE5hbWUiOiJJc2FhYyBLaWxpbW8iLCJlbWFpbCI6ImtpbGltb2syQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDA1JEk2UVFvSWdKeFZiY2RIR2xoWmk5NGVoLkdncTBZaG1SRHUxUVpZT1dkZjlxeGNZa0lnUXVTIiwicm9sZSI6InVzZXIiLCJ3ZWxjb21lZCI6ZmFsc2UsImlzQXNzaWduZWQiOjAsImlhdCI6MTY5OTE1NDg2MSwiZXhwIjoxNjk5MzI3NjYxfQ._aiWrrKfkdYLNYjbpj-LFT2yi8x8x5r6x1vgI4Y4sGY
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYzgyMmQ4M2MtMDE5YS00YzkwLTkwNDAtODM3NmIwYTQzY2YzIiwiZnVsbE5hbWUiOiJNZXNoYWNrIEtpcGxpbW8iLCJlbWFpbCI6Im1lc2hhY2syQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDA1JDM1eXpVdDczZDdidGhKQWRXeUtEOE95NnN5TkRuNVFNM3guc0kxcEtFN3ZhRDR0bXpKYVhpIiwicm9sZSI6InVzZXIiLCJpc0Fzc2lnbmVkIjowLCJpYXQiOjE2OTk2MjAxMDMsImV4cCI6MTY5OTc5MjkwM30.qczLgRkY2g22Bemk9ui5YdNlk0907au_GYbQCF2uPvo
 
 
 ###### creating new projects

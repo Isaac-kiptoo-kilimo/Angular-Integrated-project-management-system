@@ -1,0 +1,105 @@
+.row{
+    width: 98vw;
+}
+.col-md-8{
+    width: 80%;
+    /* background-color: yellow; */
+}
+
+.w-full{
+    width: 350px;
+}
+
+
+.card-note {
+    position: fixed;
+    top: 0;
+    /* right: -100%; */
+    width: 60%;
+    height: 100vh;
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
+    /* padding: 20px 0 20px 20px; */
+  
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    z-index: 100;
+    opacity: 1;
+  }
+  /* .card-note-active {
+    right: 0;
+    transition: 0.5s;
+  }  */
+
+.create-form-flex {
+    display: flex;
+    /* align-items: center; */
+    /* margin-top: 50px; */
+    /* justify-content: center; */
+    /* width: 800px; */
+  }
+.create-project{
+  display: flex !important;
+  flex-direction: row;
+}
+.container {
+    padding: 0 15px;
+    min-height: 100vh;
+    justify-content: center;
+    background: #F1F5F9;
+  }
+  .create-note-form{
+    width: 100%;
+    /* background-color: #3ba626; */
+  }
+  
+  .create-note-form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+      0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  .create-note-form>form{
+    width: 90%;
+  }
+  .form-heading{
+    /* background-color: #0d65d9; */
+    color: #777;
+    padding: 10px 0;
+    margin: 20px 0;
+  }
+  
+  .create-note-form>input{
+    height: 55px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+  }
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  form input:focus {
+    outline: none;
+    border-color: #1877f2;
+  }
+  textarea{
+    padding: 10px;
+    font-size: 18px;
+  }
+  ::placeholder {
+    color: #777;
+    font-size: 1.063rem;
+  }
+
+  .buttons{
+    display: flex;
+  }

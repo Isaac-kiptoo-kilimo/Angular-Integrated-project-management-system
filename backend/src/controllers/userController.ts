@@ -174,7 +174,9 @@ export const  getSingleUser=async (req:Request,res:Response)=>{
           const data = {
                 user_id: user_id,
               };
-              const user = await dbhelper.execute('getSingleUser', data);
+              const user = await dbhelper.execute('getSingleUser', {user_id:user_id});
+              console.log(user.recordset[0]);
+              
          return res.json(user.recordset)
           
         

@@ -4,10 +4,14 @@ import { verifyToken } from '../middlewares/verifyToken';
 
 const userRouter=Router();
 
+userRouter.post('/',()=>{
+    console.log('running in the app');
+    
+});
 userRouter.post('/register', registerUserController);
 userRouter.post('/login', loginUser);
 userRouter.get('/',getAllUsers);
-// userRouter.get('/:user_id', getSingleUser);
+userRouter.get('/single/:user_id',verifyToken, getSingleUser);
 userRouter.get('/checkUserDetails', verifyToken, checkCredentials);
 
 
